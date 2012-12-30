@@ -1,0 +1,18 @@
+{%extends "base.html"%}
+
+{%block content%}
+
+<br><span style="font-weight: bold;">{{login_error}}</span><br>
+
+
+<form style="width: 294px;" method="get" action="/validate_login/" name="login"><br><br>User Name<br>
+<input name="user_name" value="Enter your user name">
+
+<br>Password<br>
+
+<input name="password" value="Enter your password"><br>
+<br>
+<input name="login" value="login" type="submit"><br>
+
+
+</form><form method="get" action="/make_new_account/" name="new_account"><big><span style="font-weight: bold;">New to Twitter? Sign up</span></big><br>User Name<br><input name="user_name" value="Enter you user name"><br>Password<br><input name="password" value="Enter your password"><br>Email<br><input name="email" value="Enter your Email"><br><br><input name="signup" value="Sign up" type="submit"><br></form>{% endblock%}
